@@ -1,0 +1,1012 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>V-Conference a Event and Conference Flat Bootstrap Responsive Web Template | Home </title>
+
+    <!-- Google fonts -->
+    
+	<link href="//fonts.googleapis.com/css?family=Cabin:400,500,600&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-liberty.css">
+    <script>
+        setTimeout(() => {
+            document.querySelector('.loader').style.display = 'none';
+        }, 3000); // 3000 milliseconds = 3 seconds
+    </script>
+    <style>
+
+.loader {
+  position: fixed; /* Position it so it stays in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-color: rgb(255, 252, 252);
+    z-index: 1200; /* Make sure it's above other content */
+    text-align: center;
+    align-content: center;
+}
+.logo {
+    width: 50;
+    height: 50;
+    animation:  blink normal 2s infinite ease-in-out; ;
+}
+
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+.card {
+            border: 1px solid #ddd;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-body {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .card-text {
+            font-size: 1rem;
+            color: #555;
+            text-align: left;
+        }
+        .section-header {
+            margin-bottom: 2rem;
+        }
+        .row {
+            margin: 0 -0.5rem;
+        }
+        .col-md-6 {
+            padding: 0 0.5rem;
+        }
+    </style>
+  </head>
+  <body>
+<!-- header -->
+<div class="loader">
+  <img src="./assets/images/preloader.png" alt="Logo" class="logo" >
+
+</div>
+
+<header id="site-header" class="fixed-top">
+  <div class="container">
+      <nav class="navbar navbar-expand-lg stroke">
+          <a class="navbar-brand" >
+            <img src="./assets/images/nobg.png" alt="Logo" id="logo1"  style="height: 75px;" >
+            <img src="./assets/images/nobgw.png" alt="Logo" id="logo2"  style="height: 75px; display: none;" >
+
+              <!-- <span style="font-size: 20px;">Josejosephassociates</span> -->
+          </a>
+          <!-- if logo is image enable this   
+      <a class="navbar-brand" href="#index.html">
+          <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+      </a> -->
+          <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+              data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+              <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+              </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item @@about__active">
+                      <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item @@events__active">
+                      <a class="nav-link" href="events.html">Events</a>
+                  </li>
+                  <li class="nav-item @@portfolio__active">
+                      <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item @@landing__active">
+                      <a class="nav-link" href="landing-single.html">Landing</a>
+                  </li>
+                  <li class="nav-item dropdown @@blog__active">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Blog<span class="fa fa-angle-down"></span>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                          <a class="dropdown-item @@b__active" href="blog.html">Blog posts</a>
+                          <a class="dropdown-item @@bs__active" href="blog-single.html">Blog single</a>
+                      </div>
+                  </li>
+                  <li class="nav-item @@contact__active">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <!-- <li class="ml-2">
+                      <a href="#btn" class="btn btn-style btn-outline-secondary">Get Tickets</a>
+                  </li> -->
+              </ul>
+          </div>
+
+          <!-- toggle switch for light and dark theme -->
+          <div class="mobile-position">
+              <nav class="navigation">
+                  <div class="theme-switch-wrapper">
+                      <label class="theme-switch" for="checkbox">
+                          <input type="checkbox" id="checkbox">
+                          <div class="mode-container">
+                              <i class="gg-sun"></i>
+                              <i class="gg-moon"></i>
+                          </div>
+                      </label>
+                  </div>
+              </nav>
+          </div>
+          <!-- //toggle switch for light and dark theme -->
+      </nav>
+  </div>
+</header>
+<!-- //header -->
+<section class="w3l-banner py-5" id="work">
+  <div class="midd-w3 py-lg-4 py-md-3">
+      <div class="container">
+          <div class="row align-items-center">
+              <!-- Text Column -->
+              <div class="col-lg-6 mt-lg-0 mt-5 about-right-faq align-self-start">
+                  <h5 class="title-small mb-1">Welcome to Jose Joseph & Associates</h5>
+                  <h4 class="title-banner" style="text-align: left;">Justice delayed <span>is Justice denied..</span></h4>
+                  <p class="mt-4" style="text-align: left;">
+                      Legal matters require careful attention to detail and a thorough understanding of the law. Whether you're dealing with contracts, disputes, or regulatory issues, having skilled legal representation is crucial. At Jose Joseph & Associates, we guide you through the complexities of the legal system, ensuring your rights and interests are safeguarded.
+                  </p>
+              </div>
+
+              <!-- Image Slider Column -->
+              <div class="col-lg-6 mt-lg-0 mt-0 pl-12">
+                  <div class="image-slider ">
+                      <img src="assets/images/WhatsApp Image 2024-08-23 at 20.59.37_abc1e11f.jpg" class="img-fluid slider-image" alt="First Image" style="width: 450px;">
+                      <img src="assets/images/copy.jpg" class="img-fluid slider-image" alt="Second Image" style="display: none; width: 500px;">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- <section class="w3l-homeblock1 py-5 text-center">
+    <div class="container py-lg-5 py-md-4">
+        <h3 class="title-big mb-lg-5 mb-4">Not yet registered? Hurry up!</h3>
+        <div class="countdown">
+            <div class="countdown__days">
+                <div class="number"></div>
+                <span class>Days</span>
+            </div>
+
+            <div class="countdown__hours">
+                <div class="number"></div>
+                <span class>Hours</span>
+            </div>
+
+            <div class="countdown__minutes">
+                <div class="number"></div>
+                <span class>Minutes</span>
+            </div>
+
+            <div class="countdown__seconds">
+                <div class="number"></div>
+                <span class>Seconds</span>
+            </div>
+        </div>
+        <a href="#btn" class="btn btn-style btn-primary mt-5">Apply to attend</a>
+    </div>
+</section> -->
+<section class="w3l-homeblock2" id="about">
+    <div class="homeblock2 py-5 my-5">
+        <div class="container py-lg-5 py-md-3">
+            <h3 class="title-big mb-md-5 mb-4 text-center">About Us. </h3>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="position-relative">
+                        <img src="assets/images/WhatsApp Image 2024-08-23 at 21.29.46_8f070e23.jpg" alt="" class="radius-image img-fluid">
+                    </div>
+                </div>
+              
+                <div class="col-lg-8 col-md-4 mt-md-0 mt-3">
+                    <!-- <span class="fa fa-quote-left"></span> -->
+                    <p class="">Advocate Jose Joseph, with over 40 years of legal expertise, stands as a distinguished figure in the legal community. Specializing in civil and criminal law, as well as legal drafting, he has carved a niche for himself through his extensive experience and commitment to justice.
+
+                      Beyond his practice, Adv. Jose Joseph has held significant positions in various government entities. He currently serves as a Board Member of the Kerala Water Authority, reflecting his deep involvement in public service. From 2011 to 2016, he contributed as a Board Member of the Kerala Minorities Finance Development Corporation, showcasing his dedication to societal development.
+                      
+                      His legal career is marked by notable milestones, including his tenure as the Government Pleader in Mannarkkad Court from 1991 to 1996.
+                    </p>
+                        <!-- <h6 class="mt-4">- Johnson mitra</h6> -->
+                </div>
+                
+                  <div class="col-lg-8 col-md-4 mt-md-0 mt-3">
+                    <!-- <span class="fa fa-quote-left"></span> -->
+                    <p><br><br>His leadership is further evidenced by his election as the President of the Mannarkkad Bar Association for the second time, a position he continues to hold with great honor.
+                      In addition to his legal work, Adv. Jose Joseph is actively involved in social and political activities. He serves as the State General Secretary of the Kerala Congress (M) party, highlighting his influence in the political arena.
+    
+    His expertise is widely recognized by nationalized banks, including SBI, Canara Bank, and Dhanalaxmi Bank, as well as cooperative banks and KSFE, where he serves as a legal panel advocate. As a pioneer in legal scrutiny reports and a state notary, his contributions are indispensable in property verification and documentation.
+    
+    Advocate Jose Joseph's vast experience across diverse legal and governmental domains equips him to tackle every legal challenge with unmatched precision and dedication.
+                      </p>
+                        <!-- <h6 class="mt-4">- Johnson mitra</h6> -->
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="position-relative">
+                    <br><br>
+                      <img src="assets/images/justice-2060093_1920.jpg" alt="" class="radius-image img-fluid" style="width: 500px; height: 380px;">
+                  </div>
+              </div>
+                <!-- <div class="col-lg-8 mt-lg-0 mt-5">
+                     <h3 class="title">Get Access to the full Conference Experience</h3>
+                    <p>
+                     </p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+          <!-- logos Section -->
+          <section class="w3l-logos py-5">
+            <div class="container py-lg-3">
+              <h5 class="title-small mb-1 text-center">Feild Of Work.</h5>
+              <h3 class="title-big mb-5 text-center">What we do!</h3>
+                <div class="row">
+                    <div class="col-lg-12 mx-auto">
+                        <div class="owl-logos owl-carousel owl-theme logo-view">
+                          <div class="item">
+                            <div class="area-box">
+                                <span><i class="fa-solid fa-handcuffs" style="font-size:30px;"></i></span>
+                                <h4><a href="#feature" class="title-head">Criminal</a></h4>
+                                <p>Defense and representation for criminal charges.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="area-box">
+                                <span><i class="fa fa-balance-scale" style="font-size:30px;"></i></span>
+                                <h4><a href="#feature" class="title-head">Civil</a></h4>
+                                <p>Resolves disputes between individuals or entities.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="area-box">
+                                <span><i class="fa-solid fa-house" style="font-size:30px;"></i></span>
+                                <h4><a href="#feature" class="title-head">Family matter</a></h4>
+                                <p>Legal services for family-related issues.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="area-box">
+                                <span><i class="fa fa-gavel" style="font-size:30px;"></i></span>
+                                <h4><a href="#feature" class="title-head">Consumer case</a></h4>
+                                <p>Handles disputes between consumers and businesses.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="area-box">
+                                <span><i class="fa fa-envelope" style="font-size:30px;"></i></span>
+                                <h4><a href="#feature" class="title-head">Lawyer notice</a></h4>
+                                <p>Preparation and issuance of legal notices by lawyers.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="area-box">
+                                <span><i class="fa fa-file" style="font-size:30px;"></i></span>
+                                <h4><a href="#feature" class="title-head">Document verification</a></h4>
+                                <p>Verification and validation of legal documents.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="area-box">
+                                <span><i class="fa fa-pencil-alt" style="font-size:30px;"></i></span>
+                                <h4><a href="#feature" class="title-head">Notary</a></h4>
+                                <p>Notarization of documents and legal affirmations.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="area-box">
+                                <span><i class="fa fa-certificate" style="font-size:30px;"></i></span>
+                                <h4><a href="#feature" class="title-head">Affidavit</a></h4>
+                                <p>Preparation and verification of affidavits.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="area-box">
+                                <span><i class="fa fa-comments" style="font-size:30px;"></i></span>
+                                <h4><a href="#feature" class="title-head">Legal advice</a></h4>
+                                <p>Expert legal guidance and advice on various matters.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="area-box">
+                                <span><i class="fa fa-user-md" style="font-size:30px;"></i></span>
+                                <h4><a href="#feature" class="title-head">Legal consultation</a></h4>
+                                <p>Consultation sessions with legal experts for detailed discussions.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="area-box">
+                                <span><i class="fa fa-balance-scale" style="font-size:30px;"></i></span>
+                                <h4><a href="#feature" class="title-head">Bail</a></h4>
+                                <p>Assistance with bail proceedings and documentation.</p>
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section> 
+
+
+          <section class="container mt-5">
+            <h2 class="text-center section-header">Meet Our Advocates</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Adv. Sarath Jose</h5>
+                            <p class="card-text">Advocate Sarath Jose is a distinguished legal professional associated with Jose Joseph and Associates. He holds an MBA and LLB, along with specialized training in forensic science and criminology. With a vast array of experience, Adv. Sarath excels in government liaisoning and consumer matters. Additionally, he is a pioneer in mediation, skillfully bridging disputes with a focus on resolution and fairness. His diverse expertise and commitment to his profession make him a valued asset in the legal community.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Adv. Thomas Paul</h5>
+                            <p class="card-text">Advocate Thomas Paul is a distinguished legal professional affiliated with Jose Joseph and Associates. He holds both an MSW (Master of Social Work) and an LLB, demonstrating a strong commitment to both legal expertise and social welfare. With a focus on Motor Accident Claims Tribunal (MACT) cases and civil drafting, he has gained recognition for his proficiency in these areas. Beyond his legal practice, Adv. Thomas Paul actively engages in various social initiatives, reflecting his dedication to serving the community. His combined expertise in law and social work makes him a versatile and impactful advocate in both legal and societal realms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+<!--/testimonials-->
+<section class="w3l-clients pb-3" id="clients">
+  <!-- /grids -->
+  <div class="cusrtomer-layout py-5">
+      <div class="container py-lg-5 py-md-4">
+          <div class="heading text-center mx-auto">
+              <h5 class="title-small text-center">Our Testimonials</h5>
+              <h3 class="title-big mb-5">What people are saying </h3>
+          </div>
+          <!-- /grids -->
+          <div class="testimonial-width">
+              <div id="owl-demo1" class="owl-carousel owl-theme mb-4">
+                  <div class="item">
+                      <div class="testimonial-content">
+                          <div class="testimonial">
+                              <div class="testi-des">
+                                  <div class="test-img"><img src="assets/images/team1.jpg" class="img-fluid" alt="/">
+                                  </div>
+                                  <div class="peopl align-self">
+                                      <h3>Libin Varghese</h3>
+                                      <p class="indentity">Seattle, Washington</p>
+                                  </div>
+                              </div>
+                              <blockquote>
+                                  <q>I highly recommend this law firm for best legal advices.</q>
+                              </blockquote>
+                              <ul class="rating-star mt-4">
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="testimonial-content">
+                          <div class="testimonial">
+                              <div class="testi-des">
+                                  <div class="test-img"><img src="assets/images/team2.jpg" class="img-fluid" alt="/">
+                                  </div>
+                                  <div class="peopl align-self">
+                                      <h3>Chandy PT</h3>
+                                      <p class="indentity">Seattle, Washington</p>
+                                  </div>
+                              </div>
+                              <blockquote>
+                                  <q>Good and promote service.</q>
+                              </blockquote>
+                              <ul class="rating-star mt-4">
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star-o"></span></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="testimonial-content">
+                          <div class="testimonial">
+                              <div class="testi-des">
+                                  <div class="test-img"><img src="assets/images/team3.jpg" class="img-fluid" alt="/">
+                                  </div>
+                                  <div class="peopl align-self">
+                                      <h3>Reeshma.R</h3>
+                                      <p class="indentity">Seattle, Washington</p>
+                                  </div>
+                              </div>
+                              <blockquote>
+                                  <q>They give Ato Z legal services</q>
+                              </blockquote>
+                              <ul class="rating-star mt-4">
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star-o"></span></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="testimonial-content">
+                          <div class="testimonial">
+                              <div class="testi-des">
+                                  <div class="test-img"><img src="assets/images/team4.jpg" class="img-fluid" alt="/">
+                                  </div>
+                                  <div class="peopl align-self">
+                                      <h3>Ambili Haris</h3>
+                                      <p class="indentity">Seattle, Washington</p>
+                                  </div>
+                              </div>
+                              <blockquote>
+                                  <q>Professional team and very genuine advocates</q>
+                              </blockquote>
+                              <ul class="rating-star mt-4">
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star-o"></span></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="testimonial-content">
+                          <div class="testimonial">
+                              <div class="testi-des">
+                                  <div class="test-img"><img src="assets/images/team2.jpg" class="img-fluid" alt="/">
+                                  </div>
+                                  <div class="peopl align-self">
+                                      <h3>Sidharth P</h3>
+                                      <p class="indentity">Seattle, Washington</p>
+                                  </div>
+                              </div>
+                              <blockquote>
+                                  <q>Best in document verification for banks.</q>
+                              </blockquote>
+                              <ul class="rating-star mt-4">
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star-o"></span></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="testimonial-content">
+                          <div class="testimonial">
+                              <div class="testi-des">
+                                  <div class="test-img"><img src="assets/images/team3.jpg" class="img-fluid" alt="/">
+                                  </div>
+                                  <div class="peopl align-self">
+                                      <h3>Ramitha PC</h3>
+                                      <p class="indentity">Seattle, Washington</p>
+                                  </div>
+                              </div>
+                              <blockquote>
+                                  <q>The best for drafting
+                                  </q>
+                              </blockquote>
+                              <ul class="rating-star mt-4">
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star-o"></span></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="testimonial-content">
+                          <div class="testimonial">
+                              <div class="testi-des">
+                                  <div class="test-img"><img src="assets/images/team1.jpg" class="img-fluid" alt="/">
+                                  </div>
+                                  <div class="peopl align-self">
+                                      <h3>Shibu K n</h3>
+                                      <p class="indentity">Seattle, Washington</p>
+                                  </div>
+                              </div>
+                              <blockquote>
+                                  <q>Transparent service</q>
+                              </blockquote>
+                              <ul class="rating-star mt-4">
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="testimonial-content">
+                          <div class="testimonial">
+                              <div class="testi-des">
+                                  <div class="test-img"><img src="assets/images/team2.jpg" class="img-fluid" alt="/">
+                                  </div>
+                                  <div class="peopl align-self">
+                                      <h3>Arun Valiyedath</h3>
+                                      <p class="indentity">Seattle, Washington</p>
+                                  </div>
+                              </div>
+                              <blockquote>
+                                  <q>Professional team</q>
+                              </blockquote>
+                              <ul class="rating-star mt-4">
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star-o"></span></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- /grids -->
+  </div>
+  <!-- //grids -->
+</section>
+
+<!-- contacts-5-grid -->
+<div class="w3l-contact-10 py-5" id="contact">
+  <div class="form-41-mian pt-lg-4 pt-md-3 pb-lg-4">
+      <div class="container">
+          <div class="heading text-center mx-auto">
+              <h5 class="title-small text-center">Contact our team</h5>
+              <h3 class="title-big mb-5">Got any Questions? </h3>
+          </div>
+
+          <div class="contacts-5-grid-main section-gap">
+              <div class="contacts-5-grid">
+                  <div class="map-content-5">
+                      <div class="d-grid grid-col-2">
+                          <div class="contact-type">
+                              <div class="address-grid">
+                                  <h6><span class="fa fa-map-marker"></span> Address</h6>
+                                  <p>K.t.m. Plaza, Near Court Building, Mannarkkad</p>
+                                  <p>Dat's Tower, Opp. Agali Police Station, Agali</p>
+                                  <p>3C, Laxmi Palace, Opposit DPO, Palakkad</p>
+                                  
+                              </div>
+                              <div class="address-grid">
+                                  <h6><span class="fa fa-envelope"></span> Email</h6>
+                                  <a href="mailto:mailone@example.com" class="link1">josejosephassociates1@gmail.com</a>
+                                  <a href="mailto:mailtwo@example.com"
+                                      class="link1">mailtwo@example.com</a>
+                                      
+                              </div>
+                              <div class="address-grid">
+                                  <h6><span class="fa fa-phone"></span> Phone</h6>
+                                  <a href="tel:+91 9447480299" class="link1">+91 9447480299</a>
+                                  <a href="tel:+91 9605051525" class="link1">+91 9605051525</a>
+                                  <a href="tel:+91 9605051525" class="link1">+91 9207970515 (Office)</a>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="form-inner-cont mt-5">
+              <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+                  <div class="form-grids">
+                      <div class="form-input">
+                          <input type="text" name="w3lName" id="w3lName" placeholder="Enter your name *"
+                              required="" />
+                      </div>
+                      <div class="form-input">
+                          <input type="text" name="w3lSubject" id="w3lSubject" placeholder="Enter subject "
+                              required />
+                      </div>
+                      <div class="form-input">
+                          <input type="email" name="w3lSender" id="w3lSender" placeholder="Enter your email *"
+                              required />
+                      </div>
+                      <div class="form-input">
+                          <input type="text" name="w3lPhone" id="w3lPhone" placeholder="Enter your Phone Number *"
+                              required />
+                      </div>
+                  </div>
+                  <div class="form-input">
+                      <textarea name="w3lMessage" id="w3lMessage" placeholder="Type your query here"
+                          required=""></textarea>
+                  </div>
+                  <div class="text-right">
+                      <button class="btn btn-style btn-primary">Submit</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+  <!-- //contacts-5-grid -->
+</div>
+<div class="contacts-sub-5">
+  <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1563262564932!5m2!1sen!2sin"
+      style="border:0" allowfullscreen></iframe>
+</div>
+
+<!-- //logos Section -->
+<!-- footer block -->
+<section class="w3l-footer-29-main py-5" id="footer">
+  <div class="footer-29 py-md-3">
+    <div class="container">
+      <div class="row footer-top-29">
+        <div class="col-lg-4 col-md-6 footer-list-29 footer-1">
+          <h6 class="footer-title-29">About Us</h6>
+          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere Curae. Sed lorem ipsum
+            dolor sit amet elit, eaque et quis lorem dolor elit set.</p>
+          <div class="main-social-footer-29">
+            <a href="#facebook" class="facebook"><span class="fa fa-facebook-square"></span></a>
+            <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+            <a href="https://www.instagram.com/josejosephassociates/" class="instagram"><span class="fa fa-instagram"></span></a>
+            <a href="#youtube" class="youtube"><span class="fa fa-youtube"></span></a>
+            <a href="https://www.linkedin.com/in/jose-joseph-and-associates-935321320/" class="linkedin"><span class="fa fa-linkedin"></span></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 footer-list-29 footer-2 mt-md-0 mt-5">
+          <ul>
+            <h6 class="footer-title-29">Useful Links</h6>
+            <li><a href="#url">Engaging, purposeful, and creative.</a></li>
+            <li><a href="#url">Design your perfect event.</a></li>
+            <li><a href="#url">Extraordinary live events.</a></li>
+            <li><a href="#url">Improving event productivity.</a></li>
+            <li><a href="#url">Calendar of Creative Events.</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-lg-0 mt-5 footer-list-29 footer-3">
+          <div class="properties">
+            <h6 class="footer-title-29">Instagram feed</h6>
+            <div class="column2 instagram-feeds">
+              <div class="b-img"> <a href="#url"><img src="assets/images/f1.jpg" class="img-fluid" alt=""></a></div>
+              <div class="b-img"> <a href="#url"><img src="assets/images/f2.jpg" class="img-fluid" alt=""></a></div>
+              <div class="b-img"> <a href="#url"><img src="assets/images/f3.jpg" class="img-fluid" alt=""></a></div>
+              <div class="b-img"> <a href="#url"><img src="assets/images/f4.jpg" class="img-fluid" alt=""></a></div>
+              <div class="b-img"> <a href="#url"><img src="assets/images/f5.jpg" class="img-fluid" alt=""></a></div>
+              <div class="b-img"> <a href="#url"><img src="assets/images/f6.jpg" class="img-fluid" alt=""></a></div>
+              <div class="b-img"> <a href="#url"><img src="assets/images/f7.jpg" class="img-fluid" alt=""></a></div>
+              <div class="b-img"> <a href="#url"><img src="assets/images/f8.jpg" class="img-fluid" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-copies text-center">
+        <p class="copy-footer-29">© 2024 josejosephassociates. All rights reserved.</p>
+
+      </div>
+    </div>
+  </div>
+  <!-- move top -->
+  <button onclick="topFunction()" id="movetop" title="Go to top">
+    <span class="fa fa-angle-up"></span>
+  </button>
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- /move top -->
+</section>
+<!-- //footer block -->
+
+<!-- Template JavaScript -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+<script src="assets/js/theme-change.js"></script><!-- theme switch js (light and dark)-->
+
+<!-- js for portfolio lightbox -->
+<script src="assets/js/lightbox-plus-jquery.min.js"></script>
+
+<!-- responsive tabs -->
+<script src="assets/js/easyResponsiveTabs.js"></script>
+<!--Plug-in Initialisation-->
+<script type="text/javascript">
+  $(document).ready(function () {
+    //Horizontal Tab
+    $('#parentHorizontalTab').easyResponsiveTabs({
+      type: 'default', //Types: default, vertical, accordion
+      width: 'auto', //auto or any width like 600px
+      fit: true, // 100% fit in a container
+      tabidentify: 'hor_1', // The tab groups identifier
+      activate: function (event) { // Callback function if tab is switched
+        var $tab = $(this);
+        var $info = $('#nested-tabInfo');
+        var $name = $('span', $info);
+        $name.text($tab.text());
+        $info.show();
+      }
+    });
+  });
+</script>
+
+
+<script src="assets/js/owl.carousel.js"></script>
+<!-- logos for customers -->
+<script>
+  $(document).ready(function () {
+    $('.owl-logos').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      responsiveClass: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 2,
+          nav: false
+        },
+        480: {
+          items: 2,
+          nav: false
+        },
+        568: {
+          items: 3,
+          nav: false
+        },
+        1000: {
+          items: 5,
+          nav: false
+        }
+      }
+    })
+  })
+</script>
+<!-- //logos owlcarousel -->
+<!-- for tesimonials carousel slider -->
+<script>
+  $(document).ready(function () {
+    $("#owl-demo1").owlCarousel({
+      loop: true,
+      margin: 20,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        768: {
+          items: 2,
+          nav: false
+        },
+        1000: {
+          items: 3,
+          nav: true,
+          loop: false
+        }
+      }
+    })
+  })
+</script>
+<!-- //script -->
+
+<!-- script for teams -->
+<script>
+  $(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        400: {
+          items: 2,
+          nav: true,
+          margin: 20
+        },
+        768: {
+          items: 3,
+          nav: true,
+          margin: 20
+        },
+        1000: {
+          items: 4,
+          nav: true,
+          loop: true,
+          margin: 25
+        }
+      }
+    })
+  })
+</script>
+<!-- //script for teams-->
+
+<!-- Script for counter -->
+<script>
+  (() => {
+    // Specify the deadline date
+    const deadlineDate = new Date('January 27, 2025 23:59:59').getTime();
+
+    // Cache all countdown boxes into consts
+    const countdownDays = document.querySelector('.countdown__days .number');
+    const countdownHours = document.querySelector('.countdown__hours .number');
+    const countdownMinutes = document.querySelector('.countdown__minutes .number');
+    const countdownSeconds = document.querySelector('.countdown__seconds .number');
+
+    // Update the count down every 1 second (1000 milliseconds)
+    setInterval(() => {
+      // Get current date and time
+      const currentDate = new Date().getTime();
+
+      // Calculate the distance between current date and time and the deadline date and time
+      const distance = deadlineDate - currentDate;
+
+      // Calculations the data for remaining days, hours, minutes and seconds
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Insert the result data into individual countdown boxes
+      countdownDays.innerHTML = days;
+      countdownHours.innerHTML = hours;
+      countdownMinutes.innerHTML = minutes;
+      countdownSeconds.innerHTML = seconds;
+    }, 1000);
+  })();
+</script>
+<!-- //Script for counter -->
+
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+    });
+
+    $('.popup-with-move-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-slide-bottom'
+    });
+  });
+</script>
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!--/MENU-JS-->
+<script>
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 80) {
+      $("#site-header").addClass("nav-fixed");
+    } else {
+      $("#site-header").removeClass("nav-fixed");
+    }
+  });
+
+  //Main navigation Active Class Add Remove
+  $(".navbar-toggler").on("click", function () {
+    $("header").toggleClass("active");
+  });
+  $(document).on("ready", function () {
+    if ($(window).width() > 991) {
+      $("header").removeClass("active");
+    }
+    $(window).on("resize", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+    });
+  });
+</script>
+<!--//MENU-JS-->
+
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+  // JavaScript for Image Slider
+  const images = document.querySelectorAll('.slider-image');
+  let currentIndex = 0;
+
+  function showNextImage() {
+      images[currentIndex].style.display = 'none'; // Hide current image
+      currentIndex = (currentIndex + 1) % images.length; // Move to the next image, loop back if at the end
+      images[currentIndex].style.display = 'block'; // Show the next image
+  }
+
+  // Change image every 2 seconds (2000 milliseconds)
+  setInterval(showNextImage, 4000);
+</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
